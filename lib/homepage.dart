@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: new ThemeData(
-            scaffoldBackgroundColor: Color.fromARGB(255, 224, 137, 8)),
+            scaffoldBackgroundColor: Color.fromARGB(255, 246, 245, 243)),
         home: Scaffold(
           appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 32, 30, 30),
@@ -21,7 +21,9 @@ class HomePage extends StatelessWidget {
                   size: 300,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, "Quiz");
+                  },
                   child: Text(
                     "Wanna play a game?",
                     style: TextStyle(
